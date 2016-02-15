@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Network Diagram</title>
+</head>
+
+<style>
+
+div{height: 10px; }
+table {border: 2px solid #bbb !important;}
+td {Background-color: #000; border: 0px solid #ccc !important; color:#fff;text-align: center; width: 25px;}
+
+</style>
+
+<body>
+
+<div id="content"></div>
+
+<!--<div class="divSubtruction">
+    <table>
+    <tr>
+        <td>1</td>
+        <td>5</td>
+        <td>5</td> 
+    </tr>
+    <tr>
+        <td colspan="3">ActivityName</td>  
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>5</td>
+    </tr>
+   </table>
+</div> -->
+
+</body> 
+
+
+<script>
+var activies = [{
+                "EarlyStart": "\/Date(1445738400000)\/",
+ 		"Duration": "10",
+                "EarlyFinish": "\/Date(-62135589600000)\/",		
+                "ActivityName": "Activity 1",
+                "LateStart": "\/Date(1445911200000)\/",
+		"TotalFloat": "4",
+                "LateFinish": "\/Date(-62135589600000)\/"		               
+        	}];
+
+        if (activies  != null) {
+            var table = '';
+            $.each(activies, function (key, val) {
+                table += '<table>';
+				table += '<tbody>';
+				table += '<tr><td>' + val.EarlyStart + '</td><td>' + val.Duration + '</td><td>' + val.EarlyFinish + '</td></tr>';
+				table += '<tr><td colspan="3">' +  val.EarlyFinish + '</td></tr>';
+				table += '<tr><td>' + val.LateStart + '</td><td>' + val.TotalFloat + '</td><td>' + val.LateFinish + '</td></tr>';
+			    table += '</tbody>';
+                table += '</table>';
+            })
+            $("#content").append(table);
+        }
+</script>
+
+
+</html>
+
+
+
