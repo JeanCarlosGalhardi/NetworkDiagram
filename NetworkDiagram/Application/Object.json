@@ -1,9 +1,0 @@
-var activies = [{
-	"EarlyStart": "1",
-	"Duration": "10",
-	"EarlyFinish": "2",		
-	"ActivityName": "Activity 1",
-	"LateStart": "4",
-	"TotalFloat": "4",
-	"LateFinish": "5"		               
-}];
