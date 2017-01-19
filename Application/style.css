@@ -3,12 +3,16 @@ height: 10px;
 }
 
 table {
-border: 2px solid #bbb !important;
+border: 2px solid #AAA !important;
+margin-top:10px;
+//margin-left:1000px;
 }
 
 td {
-background-color: #000;
-border: 0px solid #ccc !important;
-color:#fff;
+background-color: #73D7d7;
+border: 0px solid #CCC !important;
+color:#FFF;
 text-align: center; 
-width: 25px;}
+padding: 5px;
+width: 25px;
+}
